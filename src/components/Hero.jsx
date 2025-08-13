@@ -41,7 +41,7 @@ const Hero = () => {
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4 pb-16">
                 {/* Left side - big title */}
                 <div className="font-serif">
-                    <h1 className="uppercase text-6xl md:text-[12vw] tracking-tight text-outline">
+                    <h1 className="uppercase text-6xl md:text-[10vw] tracking-tight text-outline">
                         Baburao
                     </h1>
                     <p className="text-2xl text-white font-medium">
@@ -54,16 +54,16 @@ const Hero = () => {
                 <div className="mt-8 md:mt-0 md:ml-12 max-w-sm text-white">
                     <p className="text-xl mb-4 font-semibold text-yellow-500">_Introduction_</p>
                     <p
-                        className="text-sm sm:text-lg max-w-xs leading-relaxed mb-4 text-justify">
+                        className="text-sm md:text-lg max-w-xs   font-semibold leading-relaxed mb-4 text-justify">
                         A QA and QC Engineer at
-                        <span className="text-blue-500 font-medium"> Expert Business Solutions</span>, designing test strategies that fulfill product needs across
-                        <span className="text-blue-500 font-medium"> HRMS</span>,
-                        <span className="text-blue-500 font-medium"> ERP</span>,
-                        <span className="text-blue-500 font-medium"> Retail</span>,
-                        <span className="text-blue-500 font-medium"> Restaurant</span>,
-                        <span className="text-blue-500 font-medium"> CRM</span>,
-                        <span className="text-blue-500 font-medium"> Subscription</span>, and
-                        <span className="text-blue-500 font-medium"> Real Estate</span> domains.
+                        <span className="text-blue-600 font-medium"> Expert Business Solutions</span>, designing test strategies that fulfill product needs across
+                        <span className="text-blue-600 font-medium"> HRMS</span>,
+                        <span className="text-blue-600 font-medium"> ERP</span>,
+                        <span className="text-blue-600 font-medium"> Retail</span>,
+                        <span className="text-blue-600 font-medium"> Restaurant</span>,
+                        <span className="text-blue-600 font-medium"> CRM</span>,
+                        <span className="text-blue-600 font-medium"> Subscription</span>, and
+                        <span className="text-blue-600 font-medium"> Real Estate</span> domains.
                     </p>
                     <div className="flex items-center justify-end">
                         <img
