@@ -22,6 +22,8 @@
 //     );
 // };
 
+import { ArrowDownToDot, MoveDown } from "lucide-react";
+
 // export default Hero;
 
 const Hero = () => {
@@ -38,12 +40,12 @@ const Hero = () => {
             {/* Content */}
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4 pb-16">
                 {/* Left side - big title */}
-                <div className="text-white font-serif">
-                    <h1 className="uppercase text-6xl md:text-[12vw] tracking-tight">
+                <div className="font-serif">
+                    <h1 className="uppercase text-6xl md:text-[12vw] tracking-tight text-outline">
                         Baburao
                     </h1>
-                    <p className="text-2xl font-semibold">
-                        A QA and QC Engineer
+                    <p className="text-2xl text-white font-medium">
+                        QA and QC Engineer
                     </p>
                 </div>
 
@@ -52,7 +54,7 @@ const Hero = () => {
                 <div className="mt-8 md:mt-0 md:ml-12 max-w-sm text-white">
                     <p className="text-xl mb-4 font-semibold text-yellow-500">_Introduction_</p>
                     <p
-                        className="text-sm sm:text-lg max-w-xs leading-relaxed mb-4 font-semibold text-justify">
+                        className="text-sm sm:text-lg max-w-xs leading-relaxed mb-4 text-justify">
                         A QA and QC Engineer at
                         <span className="text-blue-500 font-medium"> Expert Business Solutions</span>, designing test strategies that fulfill product needs across
                         <span className="text-blue-500 font-medium"> HRMS</span>,
@@ -63,7 +65,9 @@ const Hero = () => {
                         <span className="text-blue-500 font-medium"> Subscription</span>, and
                         <span className="text-blue-500 font-medium"> Real Estate</span> domains.
                     </p>
-                    <p className="mt-6 text-xs tracking-widest">SCROLL</p>
+                    <div className="flex items-center justify-end">
+                        <MoveDown />
+                    </div>
                 </div>
             </div>
         </section>
