@@ -66,7 +66,11 @@ const Hero = () => {
                         <span className="text-blue-500 font-medium"> Real Estate</span> domains.
                     </p>
                     <div className="flex items-center justify-end">
-                        <MoveDown />
+                        <img
+                            src="/imgs/arrowdown.gif"
+                            alt="Move down"
+                            className="w-20 h-20"
+                        />
                     </div>
                 </div>
             </div>
