@@ -1,62 +1,29 @@
-// const Hero = () => {
-//     return (
-//         <section
-//             id="hero"
-//             className="px-6 md:px-24 py-20 min-h-screen relative"
-//         >
-//             <div
-//                 className="absolute inset-0 opacity-10"
-//                 style={{
-//                     backgroundImage: `linear-gradient(rgba(0,0,0,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.5) 1px, transparent 1px)`,
-//                     backgroundSize: "50px 50px",
-//                 }}
-//             ></div>
-//             <div className="flex justify-center pb-4">
-//                 <div className="font-semibold px-6 py-1.5 rounded-full bg-[#9c7443]">
-//                     <span className="uppercase text-[#fbf0da] tracking-wide">
-//                         Introduction
-//                     </span>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// };
-
-import { ArrowDownToDot, MoveDown } from "lucide-react";
-
-// export default Hero;
-
 const Hero = () => {
+    
     return (
-        <section
-            className="relative min-h-screen flex items-end bg-cover bg-center"
-            style={{
-                backgroundImage: "url('/imgs/bbb.webp')", // Change to your image
-            }}
+        <section            
+            id="hero"
+            className="relative w-full min-h-screen flex items-end transition-colors duration-500"
         >
-            {/* Dark overlay */}
-            <div className="absolute inset-0 bg-black/40"></div>
-
-            {/* Content */}
+            <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-blue-500 to-white rounded-full blur-2xl"></div>
+            <div className="absolute bottom-1 right-0 w-1/3 h-1/2 bg-gradient-to-br from-white to-green-600 rounded-full blur-3xl"></div>
+            <div className="absolute top-0 right-0 w-1/4 h-1/3 bg-gradient-to-br from-white to-blue-500 rounded-full blur-3xl"></div>
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4 pb-16">
-                {/* Left side - big title */}
                 <div className="font-serif">
-                    <h1 className="uppercase text-6xl md:text-[10vw] tracking-tight text-outline">
+                    <h1 className="uppercase max-w-fit text-6xl md:text-[10vw] tracking-tight">
                         Baburao
                     </h1>
-                    <p className="text-2xl text-white font-medium">
-                        QA and QC Engineer
+                    <p className="text-2xl font-medium">
+                        A QA and QC Engineer
                     </p>
                 </div>
 
-
-                {/* Right side - description */}
-                <div className="mt-8 md:mt-0 md:ml-12 max-w-sm text-white">
-                    <p className="text-xl mb-4 font-semibold text-yellow-500">_Introduction_</p>
+                <div className="mt-8 md:mt-0 md:ml-12">
+                    <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_Introduction_</p>
                     <p
                         className="text-sm md:text-lg max-w-xs   font-semibold leading-relaxed mb-4 text-justify">
                         A QA and QC Engineer at
-                        <span className="text-blue-600 font-medium"> Expert Business Solutions</span>, designing test strategies that fulfill product needs across
+                        <span className="text-blue-600 font-medium"> Expert Business Solutions</span>, specializing in comprehensive test strategies for
                         <span className="text-blue-600 font-medium"> HRMS</span>,
                         <span className="text-blue-600 font-medium"> ERP</span>,
                         <span className="text-blue-600 font-medium"> Retail</span>,
@@ -72,12 +39,10 @@ const Hero = () => {
                             className="w-20 h-20"
                         />
                     </div>
-                </div>
-            </div>
+                </div>                              
+            </div>            
         </section>
     );
 };
 
 export default Hero;
-
-

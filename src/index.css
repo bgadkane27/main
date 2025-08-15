@@ -7,7 +7,7 @@
 
   color-scheme: light dark;
   color: #000;
-  background-color: #fbf0da;
+  background-color: #ecf5ff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,7 +38,7 @@ body {
 
 .text-outline {
   color: transparent; 
-  -webkit-text-stroke: 0.1rem white;
+  -webkit-text-stroke: 0.1rem #000;
 }
 
 
