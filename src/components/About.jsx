@@ -1,6 +1,28 @@
-import { competencies } from "../constants"
+"use client";
+import { useRef } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { competencies, softSkills, technicalSkills } from "../constants"
 
+
+gsap.registerPlugin(ScrollTrigger);
 const About = () => {
+    const softRef = useRef(null);
+
+    useGSAP(() => {
+        gsap.from(softRef.current.children, {
+            opacity: 0,
+            x: -40,
+            duration: 0.6,
+            stagger: 0.2,
+            scrollTrigger: {
+                trigger: softRef.current,
+                start: "top 90%",
+            },
+        });
+    }, []);
+
     return (
         <section
             id="about"
@@ -19,7 +41,7 @@ const About = () => {
                         </h2>
                         <p className="text-lg mb-6">
                             Over 3 years of experience across HRMS, ERP, Retail, Restaurant, CRM, Subscription, and Real Estate domains.
-                        </p>                        
+                        </p>
                         <div className="py-2">
                             <h2 className="uppercase text-center text-xl font-semibold mb-6">
                                 Core Testing Competencies
@@ -39,10 +61,46 @@ const About = () => {
                     <div className="flex items-center justify-center">
                         <div className="w-64 h-64 rounded-full overflow-hidden shadow-xl">
                             <img
-                                src="/imgs/back2.png"
+                                src="/imgs/pf.jpg"
                                 alt="About"
                                 className="w-full h-full object-cover"
                             />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="relative w-full max-w-7xl mx-auto px-4 py-12 min-h-screen">
+                <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+                    <div className="flex items-center justify-center">
+                        <div className="w-full rounded-sm overflow-hidden">
+                            <video
+                                src="/videos/bd8a31cc.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_Soft Skills_</p>
+                        <p className="text-lg mb-8 relative z-10">Soft skills are not just skills — thees are the foundation that
+                            <span className="text-blue-600 font-bold"> shapes and defines </span> my professional journey.</p>
+                        <div className="py-2">
+                            <div
+                                ref={softRef}
+                                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+                            >
+                                {softSkills.map((skill, index) => (
+                                    <div
+                                        key={index}
+                                        className="p-2 text-center text-xs bg-green-200 shadow-md rounded-sm"
+                                    >
+                                        {skill}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>
