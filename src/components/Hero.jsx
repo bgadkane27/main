@@ -3,34 +3,34 @@ const Hero = () => {
     return (
         <section            
             id="hero"
-            className="relative w-full min-h-screen flex items-end transition-colors duration-500"
+            className="relative w-full min-h-screen py-20 flex items-end transition-colors duration-500"
         >
             <div className="absolute bottom-0 left-0 w-1/3 h-1/2 bg-gradient-to-tr from-blue-500 to-white rounded-full blur-2xl"></div>
             <div className="absolute bottom-1 right-0 w-1/3 h-1/2 bg-gradient-to-br from-white to-green-600 rounded-full blur-3xl"></div>
             <div className="absolute top-0 right-0 w-1/4 h-1/3 bg-gradient-to-br from-white to-blue-500 rounded-full blur-3xl"></div>
-            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4 pb-16">
+            <div className="relative z-10 flex flex-col md:flex-row items-center justify-between w-full max-w-7xl mx-auto px-4">
                 <div className="font-serif">
                     <h1 className="uppercase max-w-fit text-6xl md:text-[10vw] tracking-tight">
                         Baburao
                     </h1>
                     <p className="text-2xl font-medium">
-                        A QA and QC Engineer
+                        A QA & QC Engineer
                     </p>
                 </div>
 
                 <div className="mt-8 md:mt-0 md:ml-12">
                     <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_Introduction_</p>
                     <p
-                        className="text-sm md:text-lg max-w-xs   font-semibold leading-relaxed mb-4 text-justify">
-                        A QA and QC Engineer at
-                        <span className="text-blue-600 font-medium"> Expert Business Solutions</span>, specializing in comprehensive test strategies for
-                        <span className="text-blue-600 font-medium"> HRMS</span>,
-                        <span className="text-blue-600 font-medium"> ERP</span>,
-                        <span className="text-blue-600 font-medium"> Retail</span>,
-                        <span className="text-blue-600 font-medium"> Restaurant</span>,
-                        <span className="text-blue-600 font-medium"> CRM</span>,
-                        <span className="text-blue-600 font-medium"> Subscription</span>, and
-                        <span className="text-blue-600 font-medium"> Real Estate</span> domains.
+                        className="text-sm md:text-lg max-w-xs font-semibold leading-relaxed mb-4 text-justify">
+                        A QA & QC Engineer at
+                        <span className="text-blue-600"> Expert Business Solutions</span>, specializing in comprehensive test strategies for
+                        <span className="text-blue-600"> HRMS</span>,
+                        <span className="text-blue-600"> ERP</span>,
+                        <span className="text-blue-600"> Retail</span>,
+                        <span className="text-blue-600"> Restaurant</span>,
+                        <span className="text-blue-600"> CRM</span>,
+                        <span className="text-blue-600"> Subscription</span>, and
+                        <span className="text-blue-600"> Real Estate</span> domains.
                     </p>
                     <div className="flex items-center justify-end">
                         <img
