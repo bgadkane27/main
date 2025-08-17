@@ -69,7 +69,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative w-full max-w-7xl mx-auto px-4 py-12 min-h-screen">
+            <div className="relative w-full max-w-7xl mx-auto px-4 py-12 min-h-screen flex items-center justify-center">
                 <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
                     <div className="flex items-center justify-center">
                         <div className="w-full rounded-sm overflow-hidden">
@@ -104,7 +104,17 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+                <div className="absolute w-full max-w-7xl mx-auto px-4 -bottom-10 md:bottom-24 flex items-center justify-center">
+                <p
+                    className="text-sm sm:text-lg text-justify leading-relaxed">
+                    Let's team up —
+                    <span className="text-blue-600"> your ideas</span>,
+                    <span className="text-blue-600"> my expertise</span>, and
+                    <span className="text-blue-600"> a commitment to quality</span> every step of the way.
+                </p>
             </div>
+            </div>
+            
         </section>
     )
 }
