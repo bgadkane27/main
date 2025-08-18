@@ -14,7 +14,7 @@ export const Info = () => {
                 />
                 <Link
                     heading="Ensuring Excellence"
-                    quote="Excellence is not a skill — it's an attitude."
+                    quote="Excellence isn't a skill — it's an attitude."
                     imgSrc="/imgs/backg2.avif"
                 />
                 <Link
@@ -66,7 +66,7 @@ const Link = ({ heading, imgSrc, quote }) => {
             onMouseMove={handleMouseMove}
             initial="initial"
             whileHover="whileHover"
-            className="group relative flex items-center justify-between border-b-2 border-black py-4 transition-colors duration-500 hover:border-black md:py-8"
+            className="group relative flex items-center justify-between border-b-2 border-blue-300 py-4 transition-colors duration-500 hover:border-blue-500 md:py-8"
         >
             <div>
                 <motion.span

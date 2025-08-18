@@ -32,12 +32,13 @@ const Hero = () => {
                         <span className="text-blue-600"> Subscription</span>, and
                         <span className="text-blue-600"> Real Estate</span> domains.
                     </p>
-                    <div className="flex items-center justify-end">
+                    <div className="flex items-center justify-end PX-4">
                         <img
                             src="/imgs/arrowdown.gif"
                             alt="Move down"
                             className="w-20 h-20"
                         />
+                        <span>SCROLL</span>
                     </div>
                 </div>                              
             </div>            
