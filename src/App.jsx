@@ -1,7 +1,8 @@
 import About from "./components/About"
+import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import { Info } from "./components/Info"
-import Intro from "./components/Intro"
+import Video from "./components/Video"
 
 function App() {
 
@@ -9,8 +10,9 @@ function App() {
     <main>
       <Hero />
       <Info />
-      {/* <Intro /> */}
       <About />
+      <Video />
+      <Experience />
     </main>
   )
 }

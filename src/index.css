@@ -31,14 +31,9 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #000;
     background-color: #fff;
   }
-}
-
-.text-outline {
-  color: transparent; 
-  -webkit-text-stroke: 0.1rem #000;
 }
 
 
