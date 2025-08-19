@@ -1,7 +1,7 @@
 const Hero = () => {
-    
+
     return (
-        <section            
+        <section
             id="hero"
             className="relative w-full min-h-screen py-20 flex items-end transition-colors duration-500"
         >
@@ -17,9 +17,15 @@ const Hero = () => {
                         A QA & QC Engineer
                     </p>
                 </div>
-
                 <div className="mt-8 md:mt-0 md:ml-12">
-                    <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_Introduction_</p>
+                    <div className="flex items-center gap-3 mb-4">
+                        <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
+                            B
+                        </div>
+                        <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
+                            _Introduction_
+                        </div>
+                    </div>
                     <p
                         className="text-sm md:text-lg max-w-xs font-semibold leading-relaxed mb-4 text-justify">
                         A QA & QC Engineer at
@@ -40,8 +46,8 @@ const Hero = () => {
                         />
                         <span>SCROLL</span>
                     </div>
-                </div>                              
-            </div>            
+                </div>
+            </div>
         </section>
     );
 };

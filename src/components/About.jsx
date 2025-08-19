@@ -34,7 +34,14 @@ const About = () => {
             <div className="relative w-full max-w-7xl mx-auto px-4 min-h-screen flex">
                 <div className="relative z-10 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
                     <div>
-                        <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_About Me_</p>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
+                                B
+                            </div>
+                            <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
+                                _About Me_
+                            </div>
+                        </div>
                         <h2 className="text-lg leading-relaxed mb-6">
                             I'm <strong>Baburao Adkane</strong>, a dedicated <strong>QA & QC Engineer</strong> with a passion for delivering flawless
                             software solutions through rigorous testing and continuous improvement.
@@ -84,7 +91,14 @@ const About = () => {
                         </div>
                     </div>
                     <div>
-                        <p className="text-sm max-w-fit mb-4 font-semibold border px-4 py-1 rounded-full">_Soft Skills_</p>
+                        <div className="flex items-center gap-3 mb-4">
+                            <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
+                                B
+                            </div>
+                            <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
+                                _Soft Skills_
+                            </div>
+                        </div>
                         <p className="text-lg mb-8 relative z-10">Soft skills are not just skills — thees are the foundation that
                             <span className="text-blue-600 font-bold"> shapes and defines </span> my professional journey.</p>
                         <div className="py-2">
@@ -105,16 +119,16 @@ const About = () => {
                     </div>
                 </div>
                 <div className="absolute w-full max-w-7xl mx-auto px-4 -bottom-10 md:bottom-24 flex items-center justify-center">
-                <p
-                    className="text-sm sm:text-lg text-justify leading-relaxed">
-                    Let's team up —
-                    <span className="text-blue-600"> your ideas</span>,
-                    <span className="text-blue-600"> my expertise</span>, and
-                    <span className="text-blue-600"> a commitment to quality</span> every step of the way.
-                </p>
+                    <p
+                        className="text-sm sm:text-lg text-justify leading-relaxed">
+                        Let's team up —
+                        <span className="text-blue-600"> your ideas</span>,
+                        <span className="text-blue-600"> my expertise</span>, and
+                        <span className="text-blue-600"> a commitment to quality</span> every step of the way.
+                    </p>
+                </div>
             </div>
-            </div>
-            
+
         </section>
     )
 }

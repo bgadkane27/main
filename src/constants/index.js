@@ -5,8 +5,8 @@ export const competencies = [
   "Integration Testing",
   "Regression Testing",
   "API Testing",
-  "Mobile Testing", 
-  "Cross-browser Testing", 
+  "Mobile Testing",
+  "Cross-browser Testing",
   "User Acceptance Testing",
   "Stress + Load Testing",
   "Compatibility Testing",
@@ -31,11 +31,11 @@ export const softSkills = [
   "Collaboration",
   "Continuous Learning",
   "Curious and Proactive",
-  "Problem Solving", 
+  "Problem Solving",
   "Time Management",
   "Patience and Perseverance",
   "Adaptability",
-  "Product Oriented",  
+  "Product Oriented",
   "Process Oriented"
 ];
 

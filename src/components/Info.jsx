@@ -5,7 +5,7 @@ export const Info = () => {
     return (
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
             <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-green-600 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-violet-600 blur-3xl"></div>            
+            <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-violet-600 blur-3xl"></div>
             <div className="relative z-10 flex flex-col text-center font-bold w-full max-w-7xl mx-auto px-4 py-20">
                 <Link
                     heading="Crafting Quality"
