@@ -79,7 +79,7 @@ const Link = ({ heading, imgSrc, quote }) => {
                         staggerChildren: 0.075,
                         delayChildren: 0.25,
                     }}
-                    className="relative z-10 block text-xl font-bold transition-colors duration-500 group-hover:text-black/90 md:text-6xl"
+                    className="relative z-10 block text-xl font-bold transition-colors duration-500 md:text-6xl"
                 >
                     {heading.split(" ").map((word, i) => (
                         <motion.span

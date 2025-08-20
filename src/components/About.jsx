@@ -39,7 +39,9 @@ const About = () => {
                                 B
                             </div>
                             <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
-                                _About Me_
+                                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+                                    _About Me_
+                                </span>
                             </div>
                         </div>
                         <h2 className="text-lg leading-relaxed mb-6">
@@ -96,7 +98,9 @@ const About = () => {
                                 B
                             </div>
                             <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
-                                _Soft Skills_
+                                <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+                                    _Soft Skills_
+                                </span>
                             </div>
                         </div>
                         <p className="text-lg mb-8 relative z-10">Soft skills are not just skills — thees are the foundation that

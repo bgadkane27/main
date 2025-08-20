@@ -52,7 +52,9 @@ const Experience = () => {
                             B
                         </div>
                         <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
+                            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
                             _Experience_
+                            </span>
                         </div>
                     </div>
                     <p className="mb-6 text-lg relative z-10">
