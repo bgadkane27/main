@@ -42,7 +42,7 @@ export const softSkills = [
 export const experiences = [
   {
     id: 1,
-    title: "QA/QC Enginner",
+    title: "QA and QC Enginner",
     company_name: "Expert Business Solutions",
     period: "March 2023 - Present",
     points: [
