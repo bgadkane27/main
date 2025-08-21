@@ -55,7 +55,7 @@ export const experiences = [
   {
     id: 2,
     title: "Software Test Engineer",
-    company_name: "WebRelier Software Solutions Pvt. Ltd.",
+    company_name: "WebRelier Software Solutions",
     period: "Aug 2020 - Feb 2023",
     points: [
       "Analyze Requirements/Stories.",
