@@ -67,7 +67,7 @@ export const experiences = [
   {
     id: 3,
     title: "Senior Officer",
-    company_name: "YES Bank Ltd.",
+    company_name: "YES Bank Ltd",
     period: "Mar 2017 - Jul 2020",
     points: [
       "Handle core banking operations.",
@@ -79,7 +79,7 @@ export const experiences = [
   {
     id: 4,
     title: "Assistant Manager",
-    company_name: "HDFC Bank Ltd.",
+    company_name: "HDFC Bank Ltd",
     period: "Mar 2015 - Mar 2017",
     points: [
       "Handle the teller counter.",

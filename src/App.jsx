@@ -9,12 +9,12 @@ function App() {
 
   return (
     <main>
-      <Hero />
-      <Exp />
+      <Hero />      
       <Info />
       <About />
       <Video />
-      <Experience />
+      <Exp />
+      {/* <Experience /> */}
     </main>
   )
 }
