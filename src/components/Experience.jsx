@@ -1,84 +1,66 @@
-import { useRef } from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
-import { experiences } from "../constants";
-
-gsap.registerPlugin(ScrollTrigger);
+import { Disc } from "lucide-react"
+import { experiences } from "../constants"
 
 const Experience = () => {
-    const cardsRef = useRef([]);
-
-    useGSAP(() => {
-        cardsRef.current.forEach((card, i) => {
-            gsap.fromTo(
-                card,
-                {
-                    opacity: 0,
-                    y: 80,
-                    scale: 0.85,
-                    rotateX: 15,
-                    skewY: 5,
-                },
-                {
-                    opacity: 1,
-                    y: 0,
-                    scale: 1,
-                    rotateX: 0,
-                    skewY: 0,
-                    duration: 1.25,
-                    ease: "power4.out",
-                    scrollTrigger: {
-                        trigger: card,
-                        start: "top 85%",
-                        end: "bottom 15%",
-                        toggleActions: "play none none reverse",
-                    },
-                    delay: i * 0.25,
-                }
-            );
-        });
-    }, []);
-
     return (
-        <section className="w-full min-h-screen overflow-hidden relative">
-            <div className="absolute bottom-0 left-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-green-600 blur-3xl"></div>
-            <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-violet-600 blur-3xl"></div>
-            <div className="absolute top-0 left-0 w-1/4 h-1/4 bg-gradient-to-br from-white to-lime-400/60 blur-3xl"></div>
-            <div className="w-full max-w-7xl mx-auto grid md:grid-cols-3 gap-4 px-4 py-24">
-                <div className="md:col-span-1 flex flex-col justify-center z-50">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
-                            B
-                        </div>
-                        <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
-                            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
-                            _Experience_
-                            </span>
-                        </div>
-                    </div>
-                    <p className="mb-6 text-lg relative z-10">
-                        It's not a just about existence. Its about <span className="text-blue-600 font-bold">impact and cultivating</span> a legacy that transcends time.
-                    </p>
+        <section id="exp" className="relative min-h-screen overflow-hidden py-20">
+            <div className="absolute inset-0">
+                <video
+                    src="/videos/007.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                />
+            </div>
+            <div className="absolute inset-0 bg-gray-100/60"></div>
+            <div className="relative z-10 flex items-center justify-center gap-3 mb-4">
+                <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
+                    B
                 </div>
-                <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
-                    {experiences.map((experience, index) => (
+                <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
+                    <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+                        _Experience_
+                    </span>
+                </div>
+            </div>
+            <div className="relative z-10 flex items-center justify-center mb-6 px-4">
+                <div className="text-center py-4">
+                    <h1 className="text-base md:text-3xl font-bold">
+                        It's not a just about existence.<br /> It's about
+                        <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
+                            &nbsp;impact and cultivating&nbsp;
+                        </span>
+                        a legacy that transcends time.
+                    </h1>
+                </div>
+            </div>
+            <div className="container w-full max-w-3xl mx-auto px-4 z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+                    {experiences.map((experience, i) => (
                         <div
-                            key={experience.id}
-                            ref={(el) => (cardsRef.current[index] = el)}
-                            className="relative w-full h-auto group overflow-hidden rounded-xl flex flex-col gap-4 border border-slate-700"
+                            key={i}
+                            className="group relative rounded-[1rem] p-6 flex flex-col bg-gradient-to-b from-green-200/10 via-green-100/50 to-violet-500/30 backdrop-blur-xl shadow-lg overflow-hidden"
                         >
-                            <img
-                                src="/imgs/back1.png"
-                                alt="card background"
-                                className="absolute inset-0 w-full h-full object-cover"
-                            />
-                            <div className="relative z-10 p-4 h-full flex flex-col">
-                                <h2 className="text-lg font-semibold">{experience.title}</h2>
-                                <p className="text-sm">{experience.company_name}</p>
-                                <p className="text-xs mb-2">{experience.period}</p>
-                                <div className="">
-                                    <ul className="mt-2 space-y-2 mb-6">
+                            <div className="inline-block px-5 py-2 rounded-full bg-green-500/10 font-semibold text-sm">
+                                <span className="flex items-center justify-center gap-2">
+                                    <Disc size={16} color="violet" />
+                                    {experience.title}
+                                </span>
+                            </div>
+
+                            <div className="mt-4 flex flex-col gap-2">
+                                <div className="translate-y-4 group-hover:translate-y-0 transition-all duration-500 ease-out">
+                                    <p className="text-base font-medium leading-snug">
+                                        {experience.company_name}
+                                    </p>
+                                    <p className="text-xs font-normal text-gray-600 leading-snug">
+                                        {experience.period}
+                                    </p>
+                                </div>
+                                <div className="translate-y-4 group-hover:translate-y-0 transition-all duration-700 ease-out delay-150">
+                                    <ul className="mt-2 space-y-2 mb-2">
                                         {experience.points.map((point, pointIndex) => (
                                             <li key={pointIndex} className="text-sm text-justify">
                                                 {point}
@@ -92,7 +74,7 @@ const Experience = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Experience;
+export default Experience
