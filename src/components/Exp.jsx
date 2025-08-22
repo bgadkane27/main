@@ -25,7 +25,7 @@ const Exp = () => {
                     </span>
                 </div>
             </div>
-            <div className="relative z-10 flex items-center justify-center mb-6">
+            <div className="relative z-10 flex items-center justify-center mb-6 px-4">
                 <div className="text-center py-4">
                     <h1 className="text-base md:text-3xl font-bold">
                         It's not a just about existence.<br /> It's about
@@ -36,12 +36,12 @@ const Exp = () => {
                     </h1>
                 </div>
             </div>
-            <div className="container w-full max-w-7xl mx-auto px-4 z-10">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="container w-full max-w-5xl mx-auto px-4 z-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     {experiences.map((experience, i) => (
                         <div
                             key={i}
-                            className="group relative rounded-[1rem] p-6 flex flex-col justify-between bg-gradient-to-b from-green-200/10 via-green-100/50 to-green-500/60 backdrop-blur-xl shadow-lg overflow-hidden"
+                            className="group relative rounded-[1rem] p-6 flex flex-col bg-gradient-to-b from-green-200/10 via-green-100/50 to-violet-500/30 backdrop-blur-xl shadow-lg overflow-hidden"
                         >
                             <div className="inline-block px-5 py-2 rounded-full bg-green-500/10 font-semibold text-sm">
                                 <span className="flex items-center justify-center gap-2">
@@ -55,11 +55,11 @@ const Exp = () => {
                                     <p className="text-base font-medium leading-snug">
                                         {experience.company_name}
                                     </p>
-                                    <p className="text-base font-medium leading-snug">
+                                    <p className="text-xs font-normal text-gray-600 leading-snug">
                                         {experience.period}
                                     </p>
                                 </div>
-                                <div className="h-[310px] min-h-[300] translate-y-4 group-hover:translate-y-0 transition-all duration-700 ease-out delay-150">
+                                <div className="translate-y-4 group-hover:translate-y-0 transition-all duration-700 ease-out delay-150">
                                     <ul className="mt-2 space-y-2 mb-2">
                                         {experience.points.map((point, pointIndex) => (
                                             <li key={pointIndex} className="text-sm text-justify">
