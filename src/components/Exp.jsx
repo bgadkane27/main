@@ -36,7 +36,7 @@ const Exp = () => {
                     </h1>
                 </div>
             </div>
-            <div className="container w-full max-w-5xl mx-auto px-4 z-10">
+            <div className="container w-full max-w-3xl mx-auto px-4 z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
                     {experiences.map((experience, i) => (
                         <div
