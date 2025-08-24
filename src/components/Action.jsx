@@ -30,12 +30,12 @@ export const Action = () => {
     return (
         <section
             ref={targetRef}
-            className="relative h-[240vh] md:h-[300vh] bg-[#d2d2d2]"
+            className="relative h-[240vh] md:h-[300vh] bg-[#e4e4e4]"
         >            
             <div className="absolute top-80 left-50 w-1/3 h-1/2 bg-gradient-to-tr from-yellow-500/30 to-white rounded-full blur-2xl"></div>
             <div className="absolute bottom-0 right-0 w-1/3 h-1/2 bg-gradient-to-br from-white to-green-600 rounded-full blur-3xl"></div>
             <div className="absolute top-0 right-0 w-1/4 h-1/3 bg-gradient-to-br from-white to-violet-500 rounded-full blur-3xl"></div>
-            <div className="sticky top-0 h-screen flex items-center overflow-hidden">
+            <div className="sticky top-0 h-screen flex items-center overflow-hidden pl-24">
                 <motion.p
                     style={{ skewX, x }}
                     className="origin-bottom-left whitespace-nowrap text-5xl font-black uppercase leading-[0.85] md:text-7xl md:leading-[0.85]"
