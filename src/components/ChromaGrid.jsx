@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { projects } from "../constants";
 
 const ChromaGrid = ({
   items,
@@ -86,7 +87,7 @@ const ChromaGrid = ({
           key={i}
           onMouseMove={handleCardMove}
           onClick={() => handleCardClick(c.url)}
-          className="group relative flex flex-col w-[300px] rounded-[10px] overflow-hidden transition-colors duration-300 cursor-pointer"
+          className="group relative flex flex-col w-[300px] overflow-hidden transition-colors duration-300 cursor-pointer"
           style={
             {
               "--card-border": c.borderColor || "transparent",
@@ -109,21 +110,23 @@ const ChromaGrid = ({
               loading="lazy"
               className="w-full h-full object-cover rounded-[10px]"
             />
+            <div className="absolute inset-0 flex items-center justify-center px-3">
+              <h2 className="text-white text-xl text-center font-bold bg-black px-4 py-2 rounded-lg">
+                {c.title}
+              </h2>
+            </div>
           </div> */}
           <div className="relative z-10 flex-1 p-[10px] box-border">
-            {/* Video */}
             <video
               src={c.video}
               autoPlay
               loop
               muted
               playsInline
-              className="w-full h-full max-h-40 object-cover rounded-[10px]"
+              className="w-full h-full max-h-40 object-cover"
             />
-
-            {/* Overlay Text */}
             <div className="absolute inset-0 flex items-center justify-center px-3">
-              <h2 className="text-white text-xl text-center font-bold bg-black/50 px-4 py-2 rounded-lg">
+              <h2 className="text-white text-xl text-center font-bold bg-black/80 px-4 py-2">
                 {c.title}
               </h2>
             </div>
@@ -131,6 +134,16 @@ const ChromaGrid = ({
           <div className="px-3 text-white h-full min-h-36">
             <p className="m-0 text-[0.9rem] opacity-85">{c.subtitle}</p>
           </div>
+          {/* <div className="flex flex-wrap gap-2 px-3 mb-4">
+            {c.tags.map((tag, idx) => (
+              <span
+                key={idx}
+                className="text-sm text-white bg-green-200/50 px-2 py-1 rounded-lg"
+              >
+                #{tag}
+              </span>
+            ))}
+          </div> */}
         </article>
       ))}
       <div

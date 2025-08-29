@@ -90,7 +90,7 @@ export const experiences = [
   },
 ];
 
-export const projects = [
+export const project = [
   {
     id: 1,
     name: "HRMS",
@@ -149,3 +149,77 @@ export const projects = [
   },
 ];
 
+export const projects = [
+    {
+      image: "/imgs/hrms.svg",
+      video: "/videos/hrms.mp4",
+      title: "HRMS",
+      subtitle: "Enfinity HRMS, a user-friendly cloud-based HR software in MENA which simplifies HR management, from recruitment to retirement, helps you retain talent and build a high-performing workforce.",
+      tags: ["hr core", "payroll", "self service", "attendance", "learning", "performance"],
+      gradient: "linear-gradient(145deg,#4F46E5,#000)",
+      url: "https://www.onenfinity.com/hrms",
+    },
+    {
+      image: "/imgs/erp.svg",
+      video: "/videos/erp.mp4",
+      title: "ERP",
+      subtitle: "Enfinity ERP lies a comprehensive suite of applications, seamlessly integrating accounting, sales, purchase, inventory, fixed assets and service.",
+      tags: ["accounting", "sales", "purchase", "inventory", "fixed asset", "service"],
+      gradient: "linear-gradient(210deg,#10B981,#000)",
+      url: "https://www.onenfinity.com/erp",
+    },
+    {
+      image: "/imgs/crm.svg",
+      video: "/videos/crm.mp4",
+      title: "CRM",
+      subtitle: "Enfinity CRM is a cutting-edge customer relationship management solution. Enfinity CRM simplifies it, focusing on efficient customer engagement, streamlining business processes, and enhancing productivity.",
+      tags: ["lead", "opportunity", "salesman"],
+      gradient: "linear-gradient(165deg,#F59E0B,#000)",
+      url: "https://www.onenfinity.com/crm",
+    },
+    {
+      image: "/imgs/retail.svg",
+      video: "/videos/retail.mp4",
+      title: "RETAIL",
+      subtitle: "Enfinity Retail is a cutting-edge cloud-based retail Point of Sale (POS) system, meticulously crafted to simplify and enhance the operational efficiency of retailers.",
+      tags: ["pos", "payment methods", "salesman"],
+      gradient: "linear-gradient(195deg,#EF4444,#000)",
+      url: "https://www.onenfinity.com/retail",
+    },
+    {
+      image: "/imgs/restaurant.svg",
+      video: "/videos/restaurant.mp4",
+      title: "RESTAURANT",
+      subtitle: "Enfinity Restaurant is a comprehensive Point-of-Sale (POS) and restaurant management system crafted to meet the diverse needs of modern restaurants.",
+      tags: ["pos", "payment methods", "salesman"],
+      gradient: "linear-gradient(225deg,#8B5CF6,#000)",
+      url: "https://www.onenfinity.com/restaurant",
+    },
+    {
+      image: "/imgs/real-estate.svg",
+      video: "/videos/subscription.mp4",
+      title: "SUBSCRIPTION",
+      subtitle: "Enfinity Subscription is a cloud-based software designed for businesses aiming to optimize their subscription billing processes.",
+      tags: ["product", "plan","addon","coupon","charges", "billingfrequencies"],
+      gradient: "linear-gradient(135deg,#06B6D4,#000)",
+      url: "https://www.onenfinity.com/subscription",
+    },
+    {
+      image: "/imgs/real-estate.svg",
+      video: "/videos/realestate.mp4",
+      title: "REAL-ESTATE",
+      subtitle: "Enfinity Real-Estate is a cutting-edge cloud-based solution tailored for property rental management. From seamless rent collection to intuitive analytics, we offer comprehensive tools that make managing real estate assets a breeze.",
+      tags: ["property", "rent collection", "security deposit"],
+      gradient: "linear-gradient(135deg,#06B6D4,#000)",
+      url: "https://www.onenfinity.com/real-estate",
+    },
+    {
+      image: "/imgs/loan.webp",
+      video: "/videos/loan.mp4",
+      title: "LOAN ORIGINATION SYSTEM",
+      subtitle: "Loan Origination System streamlines the end-to-end loan process with a task-based workflow and real-time alerts. It ensures faster and more efficient loan approvals.",
+      tags: ["customer", "loan application", "repayment", "emi"],
+      gradient: "linear-gradient(135deg,#06B6D4,#000)",
+      url: "https://www.ltfinance.com/personal-loan",
+    },
+  ];

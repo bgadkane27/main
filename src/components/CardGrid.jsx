@@ -1,89 +1,5 @@
-import { SquareArrowOutUpRight } from "lucide-react";
-import { projects } from "../constants";
 import ChromaGrid from "./ChromaGrid.JSX";
-
-const items = [
-    {
-      image: "/imgs/hrms.png",
-      video: "/videos/001.mp4",
-      title: "HRMS",
-      subtitle: "Enfinity HRMS, a user-friendly cloud-based HR software in MENA which simplifies HR management, from recruitment to retirement, helps you retain talent and build a high-performing workforce.",
-      handle: "@alexrivera",
-      borderColor: "#4F46E5",
-      gradient: "linear-gradient(145deg,#4F46E5,#000)",
-      url: "https://www.onenfinity.com/hrms",
-    },
-    {
-      image: "/imgs/erp.png",
-      video: "/videos/002.mp4",
-      title: "ERP",
-      subtitle: "Enfinity ERP lies a comprehensive suite of applications, seamlessly integrating accounting, sales, purchase, inventory, fixed assets and service.",
-      handle: "@jordanchen",
-      borderColor: "#10B981",
-      gradient: "linear-gradient(210deg,#10B981,#000)",
-      url: "https://www.onenfinity.com/erp",
-    },
-    {
-      image: "/imgs/crm.png",
-      video: "/videos/003.mp4",
-      title: "CRM",
-      subtitle: "Enfinity CRM is a cutting-edge customer relationship management solution. Enfinity CRM simplifies it, focusing on efficient customer engagement, streamlining business processes, and enhancing productivity.",
-      handle: "@morganblake",
-      borderColor: "#F59E0B",
-      gradient: "linear-gradient(165deg,#F59E0B,#000)",
-      url: "https://www.onenfinity.com/crm",
-    },
-    {
-      image: "/imgs/retail.png",
-      video: "/videos/004.mp4",
-      title: "RETAIL",
-      subtitle: "Enfinity Retail is a cutting-edge cloud-based retail Point of Sale (POS) system, meticulously crafted to simplify and enhance the operational efficiency of retailers.",
-      handle: "@caseypark",
-      borderColor: "#EF4444",
-      gradient: "linear-gradient(195deg,#EF4444,#000)",
-      url: "https://www.onenfinity.com/retail",
-    },
-    {
-      image: "/imgs/restaurant.png",
-      video: "/videos/004.mp4",
-      title: "RESTAURANT",
-      subtitle: "Enfinity Restaurant is a comprehensive Point-of-Sale (POS) and restaurant management system crafted to meet the diverse needs of modern restaurants.",
-      handle: "@thesamkim",
-      borderColor: "#8B5CF6",
-      gradient: "linear-gradient(225deg,#8B5CF6,#000)",
-      url: "https://www.onenfinity.com/restaurant",
-    },
-    {
-      image: "/imgs/hrms.png",
-      video: "/videos/003.mp4",
-      title: "SUBSCRIPTION",
-      subtitle: "Enfinity Subscription is a cloud-based software designed for businesses aiming to optimize their subscription billing processes.",
-      handle: "@tylerrod",
-      borderColor: "#06B6D4",
-      gradient: "linear-gradient(135deg,#06B6D4,#000)",
-      url: "https://www.onenfinity.com/subscription",
-    },
-    {
-      image: "/imgs/hrms.png",
-      video: "/videos/002.mp4",
-      title: "REAL-ESTATE",
-      subtitle: "Enfinity Real-Estate is a cutting-edge cloud-based solution tailored for property rental management. From seamless rent collection to intuitive analytics, we offer comprehensive tools that make managing real estate assets a breeze.",
-      handle: "@tylerrod",
-      borderColor: "#06B6D4",
-      gradient: "linear-gradient(135deg,#06B6D4,#000)",
-      url: "https://www.onenfinity.com/real-estate",
-    },
-    {
-      image: "/imgs/hrms.png",
-      video: "/videos/001.mp4",
-      title: "LOAN ORIGINATION SYSTEM",
-      subtitle: "Loan Origination System streamlines the end-to-end loan process with a task-based workflow and real-time alerts. It ensures faster and more efficient loan approvals.",
-      handle: "@tylerrod",
-      borderColor: "#06B6D4",
-      gradient: "linear-gradient(135deg,#06B6D4,#000)",
-      url: "https://www.ltfinance.com/personal-loan",
-    },
-  ];
+import { projects } from '../constants'
 
 const CardGrid = () => {
   return (
@@ -145,7 +61,7 @@ const CardGrid = () => {
 
       <div className="relative min-h-screen">
         <ChromaGrid
-          items={items}
+          items={projects}
           radius={300}
           damping={0.45}
           fadeOut={0.6}
