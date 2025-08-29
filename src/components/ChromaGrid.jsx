@@ -13,7 +13,7 @@ const ChromaGrid = ({
   const fadeRef = useRef(null);
   const setX = useRef(null);
   const setY = useRef(null);
-  const pos = useRef({ x: 0, y: 0 });  
+  const pos = useRef({ x: 0, y: 0 });
 
   const data = items?.length ? items : demo;
 
@@ -102,28 +102,35 @@ const ChromaGrid = ({
                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
             }}
           />
-          <div className="relative z-10 flex-1 p-[10px] box-border">
+          {/* <div className="relative z-10 flex-1 p-[10px] box-border">
             <img
               src={c.image}
               alt={c.title}
               loading="lazy"
               className="w-full h-full object-cover rounded-[10px]"
             />
+          </div> */}
+          <div className="relative z-10 flex-1 p-[10px] box-border">
+            {/* Video */}
+            <video
+              src={c.video}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-full h-full max-h-40 object-cover rounded-[10px]"
+            />
+
+            {/* Overlay Text */}
+            <div className="absolute inset-0 flex items-center justify-center px-3">
+              <h2 className="text-white text-xl text-center font-bold bg-black/50 px-4 py-2 rounded-lg">
+                {c.title}
+              </h2>
+            </div>
           </div>
-          <footer className="relative z-10 p-3 font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1 text-white">
-            <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-            {c.handle && (
-              <span className="text-[0.95rem] opacity-80 text-right">
-                {c.handle}
-              </span>
-            )}
-            <p className="m-0 text-[0.85rem] opacity-85">{c.subtitle}</p>
-            {c.location && (
-              <span className="text-[0.85rem] opacity-85 text-right">
-                {c.location}
-              </span>
-            )}
-          </footer>
+          <div className="px-3 text-white h-full min-h-36">
+            <p className="m-0 text-[0.9rem] opacity-85">{c.subtitle}</p>
+          </div>
         </article>
       ))}
       <div
