@@ -223,3 +223,10 @@ export const projects = [
       url: "https://www.ltfinance.com/personal-loan",
     },
   ];
+
+  export const competency = [
+    { text: 'Skills', video: "/videos/skills.mp4" },
+    { text: 'Consistency', video: "/videos/consistency.mp4" },
+    { text: 'Expert', video: "/videos/expert.mp4" },
+    { text: 'Scalable', video: "/videos/scalability.mp4" },
+];

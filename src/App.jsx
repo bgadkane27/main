@@ -4,8 +4,8 @@ import Hero from "./components/Hero"
 import { Info } from "./components/Info"
 import { Action } from "./components/Action"
 import Video from "./components/Video"
-import CardGrid from "./components/CardGrid"
-import Marquee from "./components/Marquee"
+import Projects from "./components/Projects"
+import Competencies from "./components/Competencies"
 
 function App() {
 
@@ -14,11 +14,12 @@ function App() {
       <Hero />      
       <Info />
       <About />
-      <Video />
-      <Experience />
+      <Competencies /> 
       <Action />
-      <CardGrid />
-      <Marquee />      
+      <Video />
+      <Experience />      
+      <Projects />
+           
     </main>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { gsap } from 'gsap';
 
-function FlowingMenu({ items = [] }) {
+function CompetenciesList({ items = [] }) {
   return (
     <div className="w-full h-full overflow-hidden">
       <nav className="flex flex-col h-full m-0 p-0">
@@ -13,7 +13,7 @@ function FlowingMenu({ items = [] }) {
   );
 }
 
-function MenuItem({ link, text, image }) {
+function MenuItem({ text, video }) {
   const itemRef = React.useRef(null);
   const marqueeRef = React.useRef(null);
   const marqueeInnerRef = React.useRef(null);
@@ -62,10 +62,14 @@ function MenuItem({ link, text, image }) {
       <span className="uppercase font-bold text-white text-[4vh] leading-[1.2] p-[1vh_1vw_0]">
         {text}
       </span>
-      <div
-        className="w-[200px] h-[7vh] my-[2em] mx-[2vw] p-[1em_0] rounded-[50px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${image})` }}
-      />
+      <video
+        src={video}
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="w-[200px] h-[10vh] my-[2em] mx-[2vw] p-[1em_0] object-cover"
+      />      
     </React.Fragment>
   ));
 
@@ -92,4 +96,4 @@ function MenuItem({ link, text, image }) {
   );
 }
 
-export default FlowingMenu;
+export default CompetenciesList;
