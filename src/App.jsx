@@ -6,6 +6,7 @@ import { Action } from "./components/Action"
 import Video from "./components/Video"
 import Projects from "./components/Projects"
 import Competencies from "./components/Competencies"
+import Contact from "./components/Contact"
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       <Video />
       <Experience />      
       <Projects />
-           
+      <Contact />
     </main>
   )
 }
