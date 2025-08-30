@@ -3,7 +3,7 @@ import CompetenciesList from "./CompetenciesList"
 
 const Competencies = () => {
     return (
-        <div id="" className="relative py-20">
+        <div id="competency" className="relative py-20">
             <div className="absolute top-1/4 left-0 w-1/2 h-1/2 bg-gradient-to-l from-white to-violet-600 blur-3xl"></div>
             <div className="absolute top-10 right-0 w-1/6 h-1/2 bg-gradient-to-br from-white to-yellow-300 blur-3xl"></div>
             <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-green-400 blur-3xl"></div>

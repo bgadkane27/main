@@ -4,6 +4,9 @@ import { projects } from '../constants'
 const Projects = () => {
   return (
     <div className="relative min-h-screen overflow-hidden py-20">
+      <div className="absolute top-1/4 left-0 w-1/2 h-1/2 bg-gradient-to-l from-white to-yellow-200 blur-3xl"></div>
+      <div className="absolute top-10 right-0 w-1/6 h-1/2 bg-gradient-to-br from-white to-violet-600 blur-3xl"></div>
+      <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-green-400 blur-3xl"></div>
       <div className="relative z-10 flex items-center justify-center gap-3 mb-4">
         <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
           B
@@ -23,7 +26,7 @@ const Projects = () => {
             </span>
           </h1>
         </div>
-      </div>    
+      </div>
       <div className="relative min-h-screen">
         <ProjectsGrid
           items={projects}
