@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 
 function CompetenciesList({ items = [] }) {
   return (
-    <div className="w-full h-full overflow-hidden">
+    <div className="w-full h-screen overflow-hidden">
       <nav className="flex flex-col h-full m-0 p-0">
         {items.map((item, idx) => (
           <MenuItem key={idx} {...item} />

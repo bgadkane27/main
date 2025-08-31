@@ -40,14 +40,14 @@ const Contact = () => {
                     return (
                         <div key={item.id}>
                             <div className="flex justify-center">
-                                <Icon className="mb-3 text-[#8C39D9]" size={24} />
+                                <Icon className="mb-3 text-violet-600" size={24} />
                             </div>
                             <h3 className="font-semibold">{item.label}</h3>
                             <a
                                 href={item.link}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="underline text-sm mt-1 block"
+                                className="text-sm font-semibold text-violet-600 hover:text-violet-800 mt-1 block"
                             >
                                 {item.value}
                             </a>
