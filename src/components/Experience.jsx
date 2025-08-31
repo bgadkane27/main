@@ -3,7 +3,7 @@ import { experiences } from "../constants"
 
 const Experience = () => {
     return (
-        <section id="exp" className="relative min-h-screen overflow-hidden py-20">
+        <section id="experience" className="relative min-h-screen overflow-hidden py-20">
             <div className="absolute inset-0">
                 <video
                     src="/videos/007.mp4"

@@ -7,11 +7,13 @@ import Video from "./components/Video"
 import Projects from "./components/Projects"
 import Competencies from "./components/Competencies"
 import Contact from "./components/Contact"
+import Header from "./components/Header"
 
 function App() {
 
   return (
     <main>
+      <Header />
       <Hero />      
       <Info />
       <About />

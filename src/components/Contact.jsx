@@ -29,7 +29,7 @@ const Contact = () => {
             </div>
             
 
-            <h2 className="text-[4rem] md:text-[9rem] font-serif font-bold text-center my-16 relative z-100">
+            <h2 className="text-[4rem] md:text-[9rem] font-serif font-bold text-center my-16 relative z-10">
                 Baburao Adkane
             </h2>
 
