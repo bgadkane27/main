@@ -9,7 +9,7 @@ const Contact = () => {
             <div className="absolute bottom-0 right-0 w-1/4 h-1/2 bg-gradient-to-br from-white to-violet-400 blur-3xl"></div>
             <div className="relative z-10 flex items-center justify-center gap-3 mb-4">
                 <div className="w-10 h-10 flex items-center justify-center rounded-full border-2 text-2xl font-bold">
-                    BB
+                    B
                 </div>
                 <div className="uppercase px-4 py-2 border-2 rounded-full font-bold tracking-wide">
                     <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-orange-500 bg-clip-text text-transparent">
