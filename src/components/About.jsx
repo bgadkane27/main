@@ -83,7 +83,7 @@ const About = () => {
                     <div className="flex items-center justify-center">
                         <div className="w-full rounded-sm overflow-hidden">
                             <video
-                                src="/videos/005.mp4"
+                                src="/videos/25.mp4"
                                 autoPlay
                                 loop
                                 muted

@@ -41,7 +41,7 @@ const Header = () => {
         {menuOpen && (
           <motion.div
             ref={menuRef}
-            className="fixed top-0 right-0 w-80 z-50 flex flex-col bg-violet-300"
+            className="fixed top-0 right-0 w-80 z-50 flex flex-col bg-gradient-to-b from-blue-300 via-purple-300 to-yellow-100"
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
@@ -67,15 +67,15 @@ const Header = () => {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center justify-between gap-6 py-6 border-t border-white/20"
+                  className="flex items-center justify-between gap-6 py-4 border-t border-white/50"
                 >
-                  <p className="text-xs text-neutral-400">{item.number}</p>
+                  <p className="text-xs">{item.number}</p>
                   <ScrollLink
                     to={item.id}
                     smooth={true}
                     duration={1500}
                     onClick={() => setMenuOpen(false)}
-                    className="text-4xl md:text-xl font-serif cursor-pointer hover:opacity-80 transition"
+                    className="text-4xl md:text-sm font-serif cursor-pointer hover:opacity-80 transition"
                   >
                     {item.text}
                   </ScrollLink>
